@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Assistan+Display:wght@400;600&family=Playfair+Display:wght@400;600&display=swap"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Travel app</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <a data-test-id="header-logo" href="./index.html" class="header__logo">
+          Travel App
+        </a>
+        <nav data-test-id="header-nav" class="header__nav">
+          <ul class="nav-header__list">
+            <li class="nav-header__item" title="Bookings">
+              <a
+                data-test-id="header-bookings-link"
+                href="./bookings.html"
+                class="nav-header__inner"
+              >
+                <span class="visually-hidden">Bookings</span>
+                <img src="./assets/images/briefcase.svg" alt="bookings" />
+              </a>
+            </li>
+            <li class="nav-header__item" title="Profile">
+              <div
+                data-test-id="header-profile-nav"
+                class="nav-header__inner profile-nav"
+                tabindex="0"
+              >
+                <span class="visually-hidden">Profile</span>
+                <img src="./assets/images/user.svg" alt="profile" />
+                <ul
+                  data-test-id="header-profile-nav-list"
+                  class="profile-nav__list"
+                >
+                  <li
+                    data-test-id="header-profile-nav-username"
+                    class="profile-nav__item"
+                  >
+                    John Doe
+                  </li>
+                  <li class="profile-nav__item">
+                    <button
+                      data-test-id="header-profile-nav-sign-out"
+                      class="profile-nav__sign-out button"
+                    >
+                      Sign Out
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="bookings-page">
+      <h1 class="visually-hidden">Travel App</h1>
+      <ul class="bookings__list">
+        <li data-test-id="booking" class="booking">
+          <h3 data-test-id="booking-title" class="booking__title">Iceland</h3>
+          <span data-test-id="booking-guests" class="booking__guests">
+            2 guests
+          </span>
+          <span data-test-id="booking-date" class="booking__date">
+            2024-07-13
+          </span>
+          <span data-test-id="booking-total" class="booking__total">
+            $14000
+          </span>
+          <button
+            data-test-id="booking-cancel"
+            class="booking__cancel"
+            title="Cancel booking"
+          >
+            <span class="visually-hidden">Cancel booking</span>
+            ×
+          </button>
+        </li>
+        <li data-test-id="booking" class="booking">
+          <h3 data-test-id="booking-title" class="booking__title">Iceland</h3>
+          <span data-test-id="booking-guests" class="booking__guests">
+            2 guests
+          </span>
+          <span data-test-id="booking-date" class="booking__date">
+            2024-09-30
+          </span>
+          <span data-test-id="booking-total" class="booking__total">
+            $14000
+          </span>
+          <button
+            data-test-id="booking-cancel"
+            class="booking__cancel"
+            title="Cancel booking"
+          >
+            <span class="visually-hidden">Cancel booking</span>
+            ×
+          </button>
+        </li>
+        <li data-test-id="booking" class="booking">
+          <h3 data-test-id="booking-title" class="booking__title">Iceland</h3>
+          <span data-test-id="booking-guests" class="booking__guests">
+            2 guests
+          </span>
+          <span data-test-id="booking-date" class="booking__date">
+            2024-10-11
+          </span>
+          <span data-test-id="booking-total" class="booking__total">
+            $14000
+          </span>
+          <button
+            data-test-id="booking-cancel"
+            class="booking__cancel"
+            title="Cancel booking"
+          >
+            <span class="visually-hidden">Cancel booking</span>
+            ×
+          </button>
+        </li>
+      </ul>
+    </main>
+    <footer class="footer">
+      <span class="footer__text">
+        © 2024, from
+        <a class="footer__link" href="https://binary-studio.com">
+          binary studio
+        </a>
+        with
+        <img class="footer__icon" src="./assets/images/heart.svg" alt="heart" />
+      </span>
+    </footer>
+  </body>
+</html>
